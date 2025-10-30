@@ -20,4 +20,3 @@ clean:
 
 %.o: %.c
 	$(CC) $(CFLAGS) -o $@ $<
-
