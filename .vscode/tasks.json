@@ -4,14 +4,68 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build all",
+      "label": "make all",
       "type": "shell",
       "command": "make all",
       "group": "build",
       "presentation": {
         "reveal": "always",
-        "panel": "new"
+        "clear": true,
+        "focus": true
+      }
+    },
+    {
+      "label": "make clean",
+      "type": "shell",
+      "command": "make clean",
+      "group": "build",
+      "presentation": {
+        "reveal": "never",
+        "close": true
       },
-    }
+      "problemMatcher": []
+    },
+    // extra special for this lab
+    {
+      "label": "make info",
+      "type": "shell",
+      "command": "make info",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "focus": true
+      }
+    },{
+      "label": "make pinfo",
+      "type": "shell",
+      "command": "make pinfo",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "focus": true
+      }
+    },{
+      "label": "make pmod",
+      "type": "shell",
+      "command": "make pmod",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "focus": true
+      }
+    },{
+      "label": "make finfo",
+      "type": "shell",
+      "command": "make finfo",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "focus": true
+      }
+    },
   ]
 }
