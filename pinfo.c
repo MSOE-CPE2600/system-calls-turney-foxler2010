@@ -8,7 +8,11 @@
  * Compile with: make
  */
 
+// defining _GNU_SOURCE instead of _POSIX_C_SOURCE so that SCHED_BATCH and SCHED_IDLE are available.
+// these are the only two linux-specific extensions being used; everything else is POSIX-compliant.
 #define _GNU_SOURCE
+// _GNU_SOURCE implicitly defines _POSIX_C_SOURCE = 200809L
+//#define _POSIX_C_SOURCE 200809L
 
 #include <stdlib.h>
 #include <stdio.h>

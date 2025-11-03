@@ -8,7 +8,9 @@
  * Compile with: make
  */
 
-#define _POSIX_C_SOURCE 200112L
+// this program is strictly POSIX.1-2008 compliant
+#define _POSIX_C_SOURCE 200809L
+
 #define HOSTNAME_STRING_SIZE 30
 
 #include <stdlib.h>

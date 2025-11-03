@@ -8,8 +8,12 @@
  * Compile with: make
  */
 
-#define _XOPEN_SOURCE
-#define _POSIX_C_SOURCE 199309L
+// enables XSI extension along with POSIX.1-2008 base features
+// needed to use nice()
+#define _XOPEN_SOURCE 700
+// _XOPEN_SOURCE >= 700 implicitly defines _POSIX_C_SOURCE = 200809L
+//#define _POSIX_C_SOURCE 200809L
+
 #define DURATION 1837272638
 
 #include <stdlib.h>
