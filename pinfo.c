@@ -36,7 +36,6 @@ int main(int argc, char* argv[])
         printf("invalid arguments.\n");
         exit(-1);
     }
-    printf("PID: %d\n", pid);
     
     /*
      * getpriority()
@@ -51,6 +50,7 @@ int main(int argc, char* argv[])
         printf("error getting information about pid %d.\n", pid);
         exit(-1);
     }
+    printf("PID: %d\n", pid);
     printf("Priority: %d\n", priority);
 
     /*

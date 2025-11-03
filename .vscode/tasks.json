@@ -12,7 +12,8 @@
         "reveal": "always",
         "clear": true,
         "focus": true
-      }
+      },
+      "problemMatcher": "$gcc"
     },
     {
       "label": "make clean",
@@ -35,7 +36,8 @@
         "reveal": "always",
         "clear": true,
         "focus": true
-      }
+      },
+      "problemMatcher": "$gcc"
     },{
       "label": "make pinfo",
       "type": "shell",
@@ -45,7 +47,8 @@
         "reveal": "always",
         "clear": true,
         "focus": true
-      }
+      },
+      "problemMatcher": "$gcc"
     },{
       "label": "make pmod",
       "type": "shell",
@@ -55,7 +58,8 @@
         "reveal": "always",
         "clear": true,
         "focus": true
-      }
+      },
+      "problemMatcher": "$gcc"
     },{
       "label": "make finfo",
       "type": "shell",
@@ -65,7 +69,8 @@
         "reveal": "always",
         "clear": true,
         "focus": true
-      }
+      },
+      "problemMatcher": "$gcc"
     },
   ]
 }
