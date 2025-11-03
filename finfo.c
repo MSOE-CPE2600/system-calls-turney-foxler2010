@@ -8,8 +8,22 @@
  * Compile with: make
  */
 
+#include <stdlib.h>
+#include <stdio.h>
+
 int main(int argc, char* argv[])
 {
-    // TODO
-    return 0;
+    char *filename;
+    if (argc == 2) {
+        if (sscanf(argv[1], "%ms", &filename) < 1) {
+            printf("error parsing argument.\n");
+            exit(-1);
+        }
+    } else {
+        printf("invalid argument(s).\n");
+        exit(-1);
+    }
+    printf("Filename: %s\n", filename);
+    free(filename);
+    return EXIT_SUCCESS;
 }
