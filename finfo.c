@@ -33,6 +33,14 @@ int main(int argc, char* argv[])
 
     /*
      * Get stat info for filename
+     * The main syscall used for this whole program is lstat().
+     * lstat() takes a pathname and retrieves information about the file at that pathname,
+     * storing it to the given "struct stat". The 'l' in the name signifies that it will retrieve info from
+     * a symbolic link itself, rather than info from what the symlink points to, like stat() would.
+     * 
+     * If the file is already open, then fstat() is the better choice since it guarantees that
+     * the information retrieved matches the current state of the file, i.e. since the file is opened there
+     * is no way for some other process to modify it in between the fstat() call and the read()/write() call.
      */
     struct stat *finfo = calloc(1, sizeof(struct stat));
     if (lstat(filename, finfo) != 0) {
